@@ -1,0 +1,8 @@
+.roulette {
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border-radius: 100%;
+}
