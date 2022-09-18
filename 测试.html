@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样板</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 总盒子 */
+        .container {
+            position: relative;
+            width: 1200px;
+            height: 680px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        /* 目录 */
+        h1 {
+            background-color: skyblue;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .catalogue {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background-color: red;
+            position: relative;
+        }
+        .catalogue ul li {
+            list-style: none;
+            background-color: rgb(179, 154, 154);
+            width: 100%;
+            height: 50px;
+        }
+        .catalogue ul li:hover {
+            background-color: white;
+        }
+        .catalogue ul li a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        /* 轮盘 */
+        .roulette {
+            position: absolute;
+            top: 0;
+            left: 300px;
+            width: 600px;
+            height: 100%;
+            background-color: yellow;
+        }
+        .roulette .show {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+        }
+        .roulette .around {
+            height: 450px;
+            width: 450px;
+            background-color: green;
+            border-radius: 50%;
+            margin-left: 75px;
+        }
+        .roulette .start {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            background-color: gray;
+        }
+        button {
+            font-size: 25px;
+            text-align: center;
+            margin-left: 242px;
+            margin-top: 7px;
+        }
+        /* 调参区域 */
+        .debug {
+            position: absolute;
+            top: 0;
+            right:0;
+            width: 300px;
+            height: 100%;
+            background-color: blue;
+        }
+        .sj {
+            margin-top: 40px;
+            width: 100%;
+            height: 40vh;
+            background-color: red;
+            overflow-y: scroll;
+            resize: vertical;
+            cursor: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="catalogue">
+            <h1>轮盘切换</h1>
+            <ul>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">运动</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+                <li><a href="#">休息时长</a></li>
+            </ul>
+        </div>
+        <div class="roulette">
+            <h1>幸运大转盘</h1>
+            <div class="show"></div>
+            <div class="around"></div>
+            <div class="start">
+                <!-- <input type="button" style="width: 80px;" value=""> -->
+                <button>开始抽奖</button>
+            </div>
+        </div>
+        <div class="debug">
+            <h1>参数调整</h1>
+            <div class="sj"></div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
